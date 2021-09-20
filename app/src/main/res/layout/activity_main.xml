@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_layout"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00DDFF"
+        android:padding="20dp"
+        android:id="@+id/linearlayout"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score"
+            android:textSize="28sp"
+            android:textColor="#000000"
+            android:id="@+id/score"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:text="@string/_0"
+            android:textColor="#000000"
+            android:id="@+id/points"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/gameOver"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/congratulations_you_have_completed_the_level" />
+
+    <TextView
+        android:id="@+id/target"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reach_500_points_to_win_the_game" />
+
+    <ImageView
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_cached_24" />
+
+    <TextView
+        android:id="@+id/restartTextView"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="#808080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on the above icon to restart" />
+
+</LinearLayout>

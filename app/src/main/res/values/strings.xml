@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">candy crush clone java</string>
+    <string name="congratulations_you_have_completed_the_level">Congratulations! You have completed the level!</string>
+    <string name="score">Score: </string>
+    <string name="reach_500_points_to_win_the_game">Reach 500 points to win the game</string>
+    <string name="_0">0</string>
+</resources>
